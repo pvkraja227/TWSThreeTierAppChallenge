@@ -108,6 +108,8 @@ first Database and then frontend and backend (change images in both frontend and
 kubectl apply -f . (creates all in that folder)
 kubectl get svc -n three-tier (3 - all up)
 kubectl get deployment -n three-tier (backend -2/front-1/database-1)
+kubectl get pods -n three-tier (4)
+kubectl logs (pod-name) -n three-tier (connected to database)
 ```
 
 ### Step 9: Install AWS Load Balancer
