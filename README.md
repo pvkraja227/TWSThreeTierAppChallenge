@@ -75,7 +75,7 @@ sudo apt install docker.io
 docker ps
 sudo chown $USER /var/run/docker.sock OR sudo chmod 666 /var/run/docker.sock OR sudo usermod -aG docker ubuntu / newgrp docker
 ```
-goto aws/ECR/create 2 repos/frontend and backend/follow the push commands
+### goto aws/ECR/create 2 repos/frontend and backend/follow the push commands
 
 ### Step 5: Install kubectl
 ``` shell
