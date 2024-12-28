@@ -104,6 +104,7 @@ kubectl get nodes
 ### Step 8: Run Manifests
 ``` shell
 kubectl create namespace three-tier
+first Database and then frontend and backend (change images in both frontend and backend)
 kubectl apply -f .
 kubectl delete -f .
 ```
