@@ -105,8 +105,9 @@ kubectl get nodes
 ``` shell
 kubectl create namespace three-tier
 first Database and then frontend and backend (change images in both frontend and backend)
-kubectl apply -f .
-kubectl delete -f .
+kubectl apply -f . (creates all in that folder)
+kubectl get svc -n three-tier (3 - all up)
+kubectl get deployment -n three-tier (backend -2/front-1/database-1)
 ```
 
 ### Step 9: Install AWS Load Balancer
