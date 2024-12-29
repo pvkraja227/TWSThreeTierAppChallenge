@@ -129,6 +129,8 @@ helm install aws-load-balancer-controller eks/aws-load-balancer-controller -n ku
 kubectl get deployment -n kube-system aws-load-balancer-controller
 kubectl apply -f ingress.yaml (apply where ingress yaml is present)
 kubectl get ing -n three-tier (if purchased godaddy, ADDRESS will be present/we can find in loadbalancers tab aswell in console)
+kubectl exec podname -n three-tier -- /bin/sh
+(buy domain in godaddy and enter the domain in ingress and frontend manifest files)
 ```
 
 ### Cleanup
